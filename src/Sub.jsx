@@ -7,7 +7,7 @@ const Sub = () => {
   <h6>Farmers</h6>
 
   <h5>
-    <img className="cirlce" src={circle}></img>
+    <img className="cirlce" src={circle} alt="circle"></img>
     <span>Add Farmer</span>
   </h5>
 </div>
