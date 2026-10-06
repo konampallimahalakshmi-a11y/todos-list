@@ -32,7 +32,7 @@ const Sidebar = () => {
         {menuItems.map((item) => (
           <div
             key={item.id}
-            className={activeMenu == item.id ? "menu-item active" : "menu-item"}
+            className={activeMenu === item.id ? "menu-item active" : "menu-item"}
             onClick={() => setActiveMenu(item.id)}
           >
             <img src={item.image} alt={item.name} />
