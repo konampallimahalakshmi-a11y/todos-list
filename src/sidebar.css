@@ -1,0 +1,78 @@
+
+.sidebar {
+  width: 256px;
+  min-width: 256px;
+  min-height: 100vh;
+  background-color: #ffffff;
+
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  top: 43px;
+  left: 99px;
+}
+
+.logo img {
+  width: 57px;
+  height: 75.04px;
+}
+
+.images {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.images img {
+  width: 24px;
+  height: 24px;
+}
+
+.images span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 221px;
+  height: 52px;
+  padding: 0 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.menu-item img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.2s ease;
+}
+
+.menu-item span {
+  transition: color 0.2s ease;
+}
+
+.menu-item.active {
+  background-color: #008000;
+  color: #ffffff;
+}
+
+.menu-item.active img {
+  filter: brightness(0) invert(1);
+}
+
+.menu-item.active span {
+  color: #ffffff;
+}
